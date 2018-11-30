@@ -1,7 +1,11 @@
-const addPerson = newPerson => {
+const addPerson = (name, age) => {
   return {
     type: "ADD_PERSON",
-    newPerson
+    newPerson: {
+      name,
+      age,
+      id: Math.random()
+    }
   };
 };
 
